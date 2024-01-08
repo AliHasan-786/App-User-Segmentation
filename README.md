@@ -7,6 +7,7 @@ The project aims to analyze user engagement and spending in a mobile app, using 
 - Python
 - Pandas
 - Plotly
+- Sklearn
 
 ## Data
 The dataset (userbehaviour.csv) contains user-level data including:
@@ -19,13 +20,13 @@ The dataset (userbehaviour.csv) contains user-level data including:
 - User Status (Installed/Uninstalled)
 
 ## Preprocessing
-Data is read using Pandas. Basic statistical analysis is performed to understand average screen time and spending. No complex preprocessing is required.
-
+- Data normalization using MinMaxScaler for clustering
+- Handling missing values and outliers, if any
+- Data is read and visualized to understand basic statistics like average, highest, and lowest screen time and spendings.
 ## Model Training and Evaluation
-- K-means clustering is used for user segmentation.
-- Segments are identified based on screen time, spending, ratings, and other features.
-- No traditional model training is involved, but clusters are evaluated based on their characteristics.
-
+- K-means clustering is used to segment users into groups based on their behavior.
+- The number of clusters is determined, and segments are labeled for clarity.
+- Model evaluation involves analyzing cluster characteristics to ensure meaningful segmentation.
 ## Usage
 - Load the dataset using Pandas.
 - Perform exploratory data analysis to understand user behavior.
