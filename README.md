@@ -4,9 +4,9 @@
 The project aims to analyze user engagement and spending in a mobile app, using data visualization to identify key patterns and user segments for better app management and marketing strategies.
 
 ## Dependencies
-Python
-Pandas
-Plotly
+- Python
+- Pandas
+- Plotly
 
 ## Data
 The dataset (userbehaviour.csv) contains user-level data including:
